@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Omicron</title>
+  </head>
+  <body>
+    <div class="statusbar">
+      <div class="statusbarlogo">
+        <img src="../assets/img/omicron.png"/>
+      </div>
+      <div class="statusbarbtns">
+        <button class="statusbarbtn" id="min">
+          <svg id="statusbarbtns" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><style>.statuscls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:10px;}</style></defs><line id="min" class="statuscls-1" x1="681.67" y1="677" x2="342.33" y2="677"/></svg>
+        </button>
+        <button class="statusbarbtn" id="max">
+          <svg id="statusbarbtns" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><style>.statuscls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:10px;}</style></defs><rect id="max" class="statuscls-1" x="347" y="347" width="330" height="330"/></svg>
+        </button>
+        <button class="statusbarbtn" id="close">
+          <svg id="statusbarbtns" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><style>.statuscls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:10px;}</style></defs><g id="close"><line class="statuscls-1" x1="347" y1="347" x2="677" y2="677"/><line class="statuscls-1" x1="677" y1="347" x2="347" y2="677"/></g></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="modallayer">
+      <div class="modal_newitem">
+        <div class="modal_newitemcontent">
+          <h1 class="modal_newitemtitle">New Item</h1>
+          <!-- SELECT TYPE -->
+          <div class="modal_newiteminputcontainer" id="inptcnt_selecttype">
+            <div class="modal_newiteminputflex">
+              <button id="modal_newitemclose"></button>
+              <select class="modal_newiteminput" id="input_type">
+                <option disabled selected>SELECT TYPE</option>
+                <option value="application">Application</option>
+                <option value="website">Website</option>
+                <!-- <option value="file">File</option> -->
+              </select>
+              <button class="modal_newitemcontinue" id="continueBtnOne"></button>
+            </div>
+            <div class="errcont"></div>
+          </div>
+
+          <!-- ENTER NAME -->
+          <div class="modal_newiteminputcontainer" id="inptcnt_entername">
+            <div class="modal_newiteminputflex">
+              <button id="modal_newitemclose"></button>
+              <input class="modal_newiteminput" id="input_name" placeholder="ENTER NAME"/>
+              <button class="modal_newitemcontinue" id="continueBtnTwo"></button>
+            </div>
+            <div class="errcont"></div>
+          </div>
+
+          <!-- SELECT/ENTER PATH/LINK -->
+          <div class="modal_newiteminputcontainer" id="inptcnt_selectpath">
+            <div class="modal_newiteminputflex">
+              <button id="modal_newitemclose"></button>
+              <input class="modal_newiteminput" id="input_path" placeholder="ENTER PATH OR LINK"/> <!-- depends on type -->
+              <button class="modal_newitemcontinue" id="continueBtnThree"></button>
+            </div>
+            <div class="errcont"></div>
+          </div>
+
+          <!-- ENTER TAGS -->
+          <div class="modal_newiteminputcontainer" id="inptcnt_entertags">
+            <div class="modal_newiteminputflex">
+              <button id="modal_newitemclose"></button>
+              <input class="modal_newiteminput" id="input_tags" placeholder="ENTER TAGS, SEPARATED WITH A COMMA"/>
+              <button class="modal_newitemcontinue" id="continueBtnFour"></button>
+            </div>
+            <div class="errcont"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="floatingbtn" id="addnewitem"></button>
+
+    <div class="content">
+      <div class="hometopview">
+        <h1 class="hometitle">Omicron</h1>
+        <div class="searchcontainer" id="srchcntnr">
+          <svg id="searchicon" data-name="searchicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs><style>.searchcls-1{fill:none;stroke:#717171;stroke-miterlimit:10;stroke-width:110px;}</style></defs><circle class="searchcls-1" cx="391.22" cy="391.22" r="273.65"/><line class="searchcls-1" x1="567.27" y1="567.27" x2="906.44" y2="906.44"/></svg>
+          <input id="searchinput" placeholder="Search"/>
+        </div>
+      </div>
+      <div id="searchqueryresults"></div>
+    </div>
+
+    <script src="../assets/js/ipcRendererProcess.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/newitem.js"></script>
+  </body>
+</html>

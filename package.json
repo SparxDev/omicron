@@ -1,0 +1,36 @@
+{
+  "name": "omicron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SparxDev/omicron.git"
+  },
+  "keywords": [
+    "Omicron",
+    "Software",
+    "App",
+    "Website",
+    "Link"
+  ],
+  "author": "Philipp Richert / SparxDev",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/SparxDev/omicron/issues"
+  },
+  "homepage": "https://github.com/SparxDev/omicron#readme",
+  "dependencies": {
+    "electron": "^6.0.10",
+    "electron-log": "^3.0.8",
+    "electron-settings": "^3.2.0",
+    "electron-shortcut-normalizer": "^1.0.0",
+    "glob": "^7.1.4"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.0.6"
+  }
+}
