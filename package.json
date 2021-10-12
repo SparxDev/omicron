@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/SparxDev/omicron#readme",
   "dependencies": {
-    "electron": "^6.0.10",
+    "electron": "^11.5.0",
     "electron-log": "^3.0.8",
     "electron-settings": "^3.2.0",
     "electron-shortcut-normalizer": "^1.0.0",
